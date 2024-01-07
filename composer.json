@@ -1,0 +1,17 @@
+{
+    "name": "dg/blog-in-php-oop-using-mvc",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "src/",
+            "App\\": "app",
+            "Database\\": "Database"
+        }
+    },
+    "authors": [
+        {
+            "name": "Imorou",
+            "email": "imoroubonaventure@gmail.com"
+        }
+    ],
+    "require": {}
+}
