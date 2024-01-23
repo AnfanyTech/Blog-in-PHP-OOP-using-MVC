@@ -9,7 +9,7 @@ namespace App\Model;
         
     public function fetchNtoN($table_entry_id){
         $pdoStatement = $this->prepare(
-            "SELECT * FROM category 
+            "SELECT * FROM ".self::$table." 
             JOIN post_category ON category.id = post_category.category_id
             WHERE post_category.post_id = ?", 
             $table_entry_id);

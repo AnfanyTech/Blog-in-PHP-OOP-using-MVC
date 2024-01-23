@@ -14,4 +14,6 @@ if (isset($_GET['p'])) {
 
 if ($p === '') {
     return (new PostsController())->index();
+}elseif ($p === "read") {
+    return (new PostsController())->read($_GET["id"]);
 }

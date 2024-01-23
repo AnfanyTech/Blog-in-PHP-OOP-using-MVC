@@ -18,6 +18,13 @@ class PostsModel extends Model
             "SELECT * FROM ".self::$table,
         )->fetchAll();
     }
+
+    public function fetchOne($id){
+        return $this->prepare("SELECT *
+        FROM ".self::$table." WHERE id = ?",
+         $id
+        )->fetch();
+    }
 }
 
 
